@@ -4,10 +4,16 @@ function timeConverter(req, res){
     // unix pattern has only numbers
     if(time.match(/^[0-9]+$/) != null){
         const date = new Date(Number(time))
-        res.send(date)
+        res.status(200).json({
+            unix:date.getTime(),
+            utc:date.toString()
+        })
     } else {
         const date = new Date(time)
-        res.send(date)
+        res.status(200).json({
+            unix:date.getTime(),
+            utc:date.toString()
+        })
     }
 }
 
