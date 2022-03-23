@@ -1,10 +1,13 @@
 
 function timeConverter(req, res){
     const {time} = req.params
+    // unix pattern has only numbers
     if(time.match(/^[0-9]+$/) != null){
-        res.send('only numbers')
+        const date = new Date(Number(time))
+        res.send(date)
     } else {
-        res.send('not only numbers')
+        const date = new Date(time)
+        res.send(date)
     }
 }
 
