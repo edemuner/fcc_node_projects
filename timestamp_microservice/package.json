@@ -1,0 +1,23 @@
+{
+  "name": "timestamp_microservice",
+  "version": "1.0.0",
+  "description": "simple api to convert time formats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edemuner/fcc_node_projects.git"
+  },
+  "author": "Eduardo Demuner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edemuner/fcc_node_projects/issues"
+  },
+  "homepage": "https://github.com/edemuner/fcc_node_projects#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3"
+  }
+}

@@ -1,0 +1,29 @@
+### SHORT
+
+1 - a simple presentable interface web service
+
+2 - with fields to receive time data
+
+3 - one in a date format, the other in unix format
+
+4 - both return a json with time in unix and in utc
+
+
+### BIGGER
+
+1 - basics of Vue.JS to cover the "presentable" part here and for future projects
+	https://medium.com/bb-tutorials-and-thoughts/how-to-develop-and-build-vue-js-app-with-nodejs-backend-typescript-version-2eeb0f10e87f
+	
+
+2 - the fields will be provided in forms, learn it in vue docs
+
+3 - date will be a dropdown, unix format will be given in a simple text box
+
+4 - ...
+	4.1.start the express server with json body-parser - the server will use a controller module
+	
+	4.2.a choice must be made: make different url for unix and date formats or to make a way that the only controller function distinguish the entry format - the return is the same for both, so probably is best to make a single function the makes the checking
+	
+	4.3.depending on the format, the value will be parsed and send in json in response
+	
+	4.4.make checkings on invalid formats, invalid dates (future days), just a try/except
