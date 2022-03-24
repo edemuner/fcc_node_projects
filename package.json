@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edemuner/fcc_node_projects.git"
+    "url": "git+https://github.com/edemuner/timestamp_service.git"
   },
   "author": "Eduardo Demuner",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/edemuner/fcc_node_projects/issues"
+    "url": "https://github.com/edemuner/timestamp_service/issues"
   },
-  "homepage": "https://github.com/edemuner/fcc_node_projects#readme",
+  "homepage": "https://github.com/edemuner/timestamp_service#readme",
   "dependencies": {
     "body-parser": "^1.19.2",
     "express": "^4.17.3"
