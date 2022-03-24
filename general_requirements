@@ -11,11 +11,10 @@
 
 ### BIGGER
 
-1 - basics of Vue.JS to cover the "presentable" part here and for future projects
-	https://medium.com/bb-tutorials-and-thoughts/how-to-develop-and-build-vue-js-app-with-nodejs-backend-typescript-version-2eeb0f10e87f
+1 - changed this: instead of using vue, just make static files and a simple html, no need for a project this small
 	
 
-2 - the fields will be provided in forms, learn it in vue docs
+2 - the fields will be provided in forms
 
 3 - date will be a dropdown, unix format will be given in a simple text box
 
