@@ -19,7 +19,7 @@ function timeConverter(req, res){
 
 module.exports = app => {
 
-    app.get('/', (req, res) => res.send('You came to your destiny'))
+    app.get('/', (req, res) => res.send('You came to your destiny').end())
 
     app.get('/api/:time', timeConverter)
 }
