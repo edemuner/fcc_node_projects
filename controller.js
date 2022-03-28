@@ -26,5 +26,10 @@ module.exports = app => {
 
     app.get('/', (req, res) => res.send('You came to your destiny').end())
 
+    app.get('/api', (req, res) => {
+        const date = new Date()
+        generateDateOutput(date, res)
+    })
+
     app.get('/api/:time', timeConverter)
 }
