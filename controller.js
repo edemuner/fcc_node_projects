@@ -6,13 +6,13 @@ function timeConverter(req, res){
         const date = new Date(Number(time))
         res.status(200).json({
             unix:date.getTime(),
-            utc:date.toString()
+            utc:date.toUTCString()
         })
     } else {
         const date = new Date(time)
         res.status(200).json({
             unix:date.getTime(),
-            utc:date.toString()
+            utc:date.toUTCString()
         })
     }
 }
