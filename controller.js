@@ -4,25 +4,21 @@ function timeConverter(req, res){
     // unix pattern has only numbers
     if(time.match(/^[0-9]+$/) != null){
             const date = new Date(Number(time))
-            if (isNaN(date)){
-                console.log(date)
-                res.status(400).json({error:"Invalid Date"})
-            } else {
-                res.status(200).json({
-                    unix:date.getTime(),
-                    utc:date.toUTCString()
-                })
-            }
+            generateDateOutput(date, res)
     } else {
             const date = new Date(time)
-            if (isNaN(date)){
-                res.status(400).json({error:"Invalid Date"})
-            } else {
-                res.status(200).json({
-                    unix:date.getTime(),
-                    utc:date.toUTCString()
-                })
-            }
+            generateDateOutput(date, res)
+    }
+}
+
+function generateDateOutput(date, res){
+    if (isNaN(date)){
+        res.status(400).json({error:"Invalid Date"})
+    } else {
+        res.status(200).json({
+            unix:date.getTime(),
+            utc:date.toUTCString()
+        })
     }
 }
 
