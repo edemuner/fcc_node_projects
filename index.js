@@ -6,6 +6,9 @@ const app = express()
 
 app.use(bodyparser.json())
 
+var cors = require('cors');
+app.use(cors({optionsSuccessStatus: 200}));
+
 controller(app)
 
 const port = process.env.PORT || 3000
